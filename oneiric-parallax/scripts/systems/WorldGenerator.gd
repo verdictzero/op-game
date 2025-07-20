@@ -347,7 +347,7 @@ func generate_vegetation():
 			world_data[x][y]["vegetation"] = vegetation
 		
 		# More frequent yielding and progress updates
-		if x % 5 == 0:
+		if x % 2 == 0:  # Even more frequent yielding
 			var progress = 0.8 + (float(x) / world_size.x) * 0.1
 			generation_progress.emit(progress, "Growing vegetation... (%d/%d)" % [x + 1, world_size.x])
 			await get_tree().process_frame
@@ -361,7 +361,7 @@ func create_world_tiles(container: Node2D):
 			create_terrain_tile_advanced(x, y, tile_data, container)
 		
 		# More frequent yielding for large worlds
-		if x % 5 == 0:
+		if x % 2 == 0:  # Even more frequent yielding
 			var progress = 0.9 + (float(x) / world_size.x) * 0.1
 			generation_progress.emit(progress, "Creating world tiles... (%d/%d)" % [x + 1, world_size.x])
 			await get_tree().process_frame

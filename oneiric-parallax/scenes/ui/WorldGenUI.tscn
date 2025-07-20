@@ -16,214 +16,223 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0.1, 0.1, 0.15, 0.9)
 
-[node name="VBox" type="VBoxContainer" parent="."]
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -350.0
-offset_right = 300.0
-offset_bottom = 350.0
+offset_left = -450.0
+offset_top = -320.0
+offset_right = 450.0
+offset_bottom = 320.0
 
-[node name="TitleLabel" type="Label" parent="VBox"]
+[node name="VBox" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitleLabel" type="Label" parent="ScrollContainer/VBox"]
 layout_mode = 2
 text = "WORLD GENERATION"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HSeparator" type="HSeparator" parent="VBox"]
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer/VBox"]
 layout_mode = 2
 
-[node name="ParametersContainer" type="VBoxContainer" parent="VBox"]
+[node name="MainContainer" type="HBoxContainer" parent="ScrollContainer/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="WorldSizeContainer" type="VBoxContainer" parent="VBox/ParametersContainer"]
+[node name="LeftColumn" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WorldSizeContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="WorldSizeLabel" type="Label" parent="VBox/ParametersContainer/WorldSizeContainer"]
+[node name="WorldSizeLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/WorldSizeContainer"]
 layout_mode = 2
-text = "World Size: 128x128"
+text = "World Size: 64x64"
 
-[node name="WorldSizeSlider" type="HSlider" parent="VBox/ParametersContainer/WorldSizeContainer"]
+[node name="WorldSizeSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/LeftColumn/WorldSizeContainer"]
 layout_mode = 2
-min_value = 64.0
-max_value = 256.0
-step = 32.0
-value = 128.0
+min_value = 32.0
+max_value = 128.0
+step = 16.0
+value = 64.0
 
-[node name="SeedContainer" type="HBoxContainer" parent="VBox/ParametersContainer"]
+[node name="SeedContainer" type="HBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="SeedLabel" type="Label" parent="VBox/ParametersContainer/SeedContainer"]
+[node name="SeedLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/SeedContainer"]
 layout_mode = 2
 text = "Seed:"
 size_flags_horizontal = 0
 
-[node name="SeedInput" type="LineEdit" parent="VBox/ParametersContainer/SeedContainer"]
+[node name="SeedInput" type="LineEdit" parent="ScrollContainer/VBox/MainContainer/LeftColumn/SeedContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Enter seed value"
 
-[node name="RandomSeedButton" type="Button" parent="VBox/ParametersContainer/SeedContainer"]
+[node name="RandomSeedButton" type="Button" parent="ScrollContainer/VBox/MainContainer/LeftColumn/SeedContainer"]
 layout_mode = 2
 text = "Random"
 
-[node name="HSeparator2" type="HSeparator" parent="VBox/ParametersContainer"]
+[node name="HSeparator2" type="HSeparator" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="PresetsContainer" type="VBoxContainer" parent="VBox/ParametersContainer"]
+[node name="PresetsContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="PresetsLabel" type="Label" parent="VBox/ParametersContainer/PresetsContainer"]
+[node name="PresetsLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/PresetsContainer"]
 layout_mode = 2
 text = "Presets:"
 
-[node name="PresetsOption" type="OptionButton" parent="VBox/ParametersContainer/PresetsContainer"]
+[node name="PresetsOption" type="OptionButton" parent="ScrollContainer/VBox/MainContainer/LeftColumn/PresetsContainer"]
 layout_mode = 2
 
-[node name="HSeparator3" type="HSeparator" parent="VBox/ParametersContainer"]
+[node name="HSeparator3" type="HSeparator" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="ClimateContainer" type="VBoxContainer" parent="VBox/ParametersContainer"]
+[node name="ClimateContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn"]
 layout_mode = 2
 
-[node name="ClimateLabel" type="Label" parent="VBox/ParametersContainer/ClimateContainer"]
+[node name="ClimateLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer"]
 layout_mode = 2
 text = "Climate Settings"
 horizontal_alignment = 1
 
-[node name="TemperatureContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ClimateContainer"]
+[node name="TemperatureContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer"]
 layout_mode = 2
 
-[node name="TemperatureLabel" type="Label" parent="VBox/ParametersContainer/ClimateContainer/TemperatureContainer"]
+[node name="TemperatureLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/TemperatureContainer"]
 layout_mode = 2
 text = "Temperature Scale: 0.10"
 
-[node name="TemperatureSlider" type="HSlider" parent="VBox/ParametersContainer/ClimateContainer/TemperatureContainer"]
+[node name="TemperatureSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/TemperatureContainer"]
 layout_mode = 2
 min_value = 0.01
 max_value = 0.3
 step = 0.01
 value = 0.1
 
-[node name="HumidityContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ClimateContainer"]
+[node name="HumidityContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer"]
 layout_mode = 2
 
-[node name="HumidityLabel" type="Label" parent="VBox/ParametersContainer/ClimateContainer/HumidityContainer"]
+[node name="HumidityLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/HumidityContainer"]
 layout_mode = 2
 text = "Humidity Scale: 0.15"
 
-[node name="HumiditySlider" type="HSlider" parent="VBox/ParametersContainer/ClimateContainer/HumidityContainer"]
+[node name="HumiditySlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/HumidityContainer"]
 layout_mode = 2
 min_value = 0.01
 max_value = 0.3
 step = 0.01
 value = 0.15
 
-[node name="ElevationContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ClimateContainer"]
+[node name="ElevationContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer"]
 layout_mode = 2
 
-[node name="ElevationLabel" type="Label" parent="VBox/ParametersContainer/ClimateContainer/ElevationContainer"]
+[node name="ElevationLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/ElevationContainer"]
 layout_mode = 2
 text = "Elevation Scale: 0.08"
 
-[node name="ElevationSlider" type="HSlider" parent="VBox/ParametersContainer/ClimateContainer/ElevationContainer"]
+[node name="ElevationSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/ElevationContainer"]
 layout_mode = 2
 min_value = 0.01
 max_value = 0.3
 step = 0.01
 value = 0.08
 
-[node name="HSeparator4" type="HSeparator" parent="VBox/ParametersContainer"]
+[node name="RightColumn" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResourcesContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn"]
 layout_mode = 2
 
-[node name="ResourcesContainer" type="VBoxContainer" parent="VBox/ParametersContainer"]
-layout_mode = 2
-
-[node name="ResourcesLabel" type="Label" parent="VBox/ParametersContainer/ResourcesContainer"]
+[node name="ResourcesLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer"]
 layout_mode = 2
 text = "World Features"
 horizontal_alignment = 1
 
-[node name="ResourceDensityContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ResourcesContainer"]
+[node name="ResourceDensityContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer"]
 layout_mode = 2
 
-[node name="ResourceLabel" type="Label" parent="VBox/ParametersContainer/ResourcesContainer/ResourceDensityContainer"]
+[node name="ResourceLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/ResourceDensityContainer"]
 layout_mode = 2
 text = "Resource Density: 30%"
 
-[node name="ResourceSlider" type="HSlider" parent="VBox/ParametersContainer/ResourcesContainer/ResourceDensityContainer"]
+[node name="ResourceSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/ResourceDensityContainer"]
 layout_mode = 2
 max_value = 1.0
 step = 0.1
 value = 0.3
 
-[node name="VegetationContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ResourcesContainer"]
+[node name="VegetationContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer"]
 layout_mode = 2
 
-[node name="VegetationLabel" type="Label" parent="VBox/ParametersContainer/ResourcesContainer/VegetationContainer"]
+[node name="VegetationLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/VegetationContainer"]
 layout_mode = 2
 text = "Vegetation Density: 40%"
 
-[node name="VegetationSlider" type="HSlider" parent="VBox/ParametersContainer/ResourcesContainer/VegetationContainer"]
+[node name="VegetationSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/VegetationContainer"]
 layout_mode = 2
 max_value = 1.0
 step = 0.1
 value = 0.4
 
-[node name="RiverContainer" type="VBoxContainer" parent="VBox/ParametersContainer/ResourcesContainer"]
+[node name="RiverContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer"]
 layout_mode = 2
 
-[node name="RiverLabel" type="Label" parent="VBox/ParametersContainer/ResourcesContainer/RiverContainer"]
+[node name="RiverLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/RiverContainer"]
 layout_mode = 2
 text = "Rivers: 3"
 
-[node name="RiverSlider" type="HSlider" parent="VBox/ParametersContainer/ResourcesContainer/RiverContainer"]
+[node name="RiverSlider" type="HSlider" parent="ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/RiverContainer"]
 layout_mode = 2
 max_value = 10.0
 step = 1.0
 value = 3.0
 
-[node name="HSeparator5" type="HSeparator" parent="VBox"]
+[node name="HSeparator4" type="HSeparator" parent="ScrollContainer/VBox/MainContainer/RightColumn"]
 layout_mode = 2
 
-[node name="ProgressContainer" type="VBoxContainer" parent="VBox"]
+[node name="ProgressContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn"]
 layout_mode = 2
 
-[node name="ProgressLabel" type="Label" parent="VBox/ProgressContainer"]
+[node name="ProgressLabel" type="Label" parent="ScrollContainer/VBox/MainContainer/RightColumn/ProgressContainer"]
 layout_mode = 2
 text = "Generating..."
 horizontal_alignment = 1
 
-[node name="ProgressBar" type="ProgressBar" parent="VBox/ProgressContainer"]
+[node name="ProgressBar" type="ProgressBar" parent="ScrollContainer/VBox/MainContainer/RightColumn/ProgressContainer"]
 layout_mode = 2
 
-[node name="HSeparator6" type="HSeparator" parent="VBox"]
-layout_mode = 2
-
-[node name="StatsContainer" type="VBoxContainer" parent="VBox"]
+[node name="StatsContainer" type="VBoxContainer" parent="ScrollContainer/VBox/MainContainer/RightColumn"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="StatsLabel" type="RichTextLabel" parent="VBox/StatsContainer"]
+[node name="StatsLabel" type="RichTextLabel" parent="ScrollContainer/VBox/MainContainer/RightColumn/StatsContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
 fit_content = true
 
-[node name="ButtonContainer" type="HBoxContainer" parent="VBox"]
+[node name="HSeparator5" type="HSeparator" parent="ScrollContainer/VBox"]
 layout_mode = 2
 
-[node name="GenerateButton" type="Button" parent="VBox/ButtonContainer"]
+[node name="ButtonContainer" type="HBoxContainer" parent="ScrollContainer/VBox"]
+layout_mode = 2
+
+[node name="GenerateButton" type="Button" parent="ScrollContainer/VBox/ButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "GENERATE WORLD"
 
-[node name="StartGameButton" type="Button" parent="VBox/ButtonContainer"]
+[node name="StartGameButton" type="Button" parent="ScrollContainer/VBox/ButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "START GAME"

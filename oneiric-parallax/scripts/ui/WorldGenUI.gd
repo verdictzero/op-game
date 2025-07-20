@@ -4,35 +4,35 @@ class_name WorldGenUI
 signal generate_world_requested(params: Dictionary)
 signal start_game_requested()
 
-@onready var world_size_slider = $VBox/ParametersContainer/WorldSizeContainer/WorldSizeSlider
-@onready var world_size_label = $VBox/ParametersContainer/WorldSizeContainer/WorldSizeLabel
-@onready var seed_input = $VBox/ParametersContainer/SeedContainer/SeedInput
-@onready var random_seed_button = $VBox/ParametersContainer/SeedContainer/RandomSeedButton
+@onready var world_size_slider = $ScrollContainer/VBox/MainContainer/LeftColumn/WorldSizeContainer/WorldSizeSlider
+@onready var world_size_label = $ScrollContainer/VBox/MainContainer/LeftColumn/WorldSizeContainer/WorldSizeLabel
+@onready var seed_input = $ScrollContainer/VBox/MainContainer/LeftColumn/SeedContainer/SeedInput
+@onready var random_seed_button = $ScrollContainer/VBox/MainContainer/LeftColumn/SeedContainer/RandomSeedButton
 
-@onready var temperature_slider = $VBox/ParametersContainer/ClimateContainer/TemperatureContainer/TemperatureSlider
-@onready var temperature_label = $VBox/ParametersContainer/ClimateContainer/TemperatureContainer/TemperatureLabel
-@onready var humidity_slider = $VBox/ParametersContainer/ClimateContainer/HumidityContainer/HumiditySlider
-@onready var humidity_label = $VBox/ParametersContainer/ClimateContainer/HumidityContainer/HumidityLabel
-@onready var elevation_slider = $VBox/ParametersContainer/ClimateContainer/ElevationContainer/ElevationSlider
-@onready var elevation_label = $VBox/ParametersContainer/ClimateContainer/ElevationContainer/ElevationLabel
+@onready var temperature_slider = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/TemperatureContainer/TemperatureSlider
+@onready var temperature_label = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/TemperatureContainer/TemperatureLabel
+@onready var humidity_slider = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/HumidityContainer/HumiditySlider
+@onready var humidity_label = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/HumidityContainer/HumidityLabel
+@onready var elevation_slider = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/ElevationContainer/ElevationSlider
+@onready var elevation_label = $ScrollContainer/VBox/MainContainer/LeftColumn/ClimateContainer/ElevationContainer/ElevationLabel
 
-@onready var resource_slider = $VBox/ParametersContainer/ResourcesContainer/ResourceDensityContainer/ResourceSlider
-@onready var resource_label = $VBox/ParametersContainer/ResourcesContainer/ResourceDensityContainer/ResourceLabel
-@onready var vegetation_slider = $VBox/ParametersContainer/ResourcesContainer/VegetationContainer/VegetationSlider
-@onready var vegetation_label = $VBox/ParametersContainer/ResourcesContainer/VegetationContainer/VegetationLabel
-@onready var river_slider = $VBox/ParametersContainer/ResourcesContainer/RiverContainer/RiverSlider
-@onready var river_label = $VBox/ParametersContainer/ResourcesContainer/RiverContainer/RiverLabel
+@onready var resource_slider = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/ResourceDensityContainer/ResourceSlider
+@onready var resource_label = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/ResourceDensityContainer/ResourceLabel
+@onready var vegetation_slider = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/VegetationContainer/VegetationSlider
+@onready var vegetation_label = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/VegetationContainer/VegetationLabel
+@onready var river_slider = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/RiverContainer/RiverSlider
+@onready var river_label = $ScrollContainer/VBox/MainContainer/RightColumn/ResourcesContainer/RiverContainer/RiverLabel
 
-@onready var generate_button = $VBox/ButtonContainer/GenerateButton
-@onready var start_game_button = $VBox/ButtonContainer/StartGameButton
-@onready var presets_option = $VBox/ParametersContainer/PresetsContainer/PresetsOption
+@onready var generate_button = $ScrollContainer/VBox/ButtonContainer/GenerateButton
+@onready var start_game_button = $ScrollContainer/VBox/ButtonContainer/StartGameButton
+@onready var presets_option = $ScrollContainer/VBox/MainContainer/LeftColumn/PresetsContainer/PresetsOption
 
-@onready var progress_container = $VBox/ProgressContainer
-@onready var progress_bar = $VBox/ProgressContainer/ProgressBar
-@onready var progress_label = $VBox/ProgressContainer/ProgressLabel
+@onready var progress_container = $ScrollContainer/VBox/MainContainer/RightColumn/ProgressContainer
+@onready var progress_bar = $ScrollContainer/VBox/MainContainer/RightColumn/ProgressContainer/ProgressBar
+@onready var progress_label = $ScrollContainer/VBox/MainContainer/RightColumn/ProgressContainer/ProgressLabel
 
-@onready var stats_container = $VBox/StatsContainer
-@onready var stats_label = $VBox/StatsContainer/StatsLabel
+@onready var stats_container = $ScrollContainer/VBox/MainContainer/RightColumn/StatsContainer
+@onready var stats_label = $ScrollContainer/VBox/MainContainer/RightColumn/StatsContainer/StatsLabel
 
 var world_generator: WorldGenerator
 
@@ -57,8 +57,8 @@ func setup_ui():
 	start_game_button.pressed.connect(_on_start_game_pressed)
 	presets_option.item_selected.connect(_on_preset_selected)
 	
-	# Set initial values
-	world_size_slider.value = 128
+	# Set initial values  
+	world_size_slider.value = 64  # Match WorldGenerator default
 	seed_input.text = str(randi())
 	temperature_slider.value = 0.1
 	humidity_slider.value = 0.15
