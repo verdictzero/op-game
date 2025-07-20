@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_0vrtk"]
+[ext_resource type="PackedScene" path="res://scenes/ui/MainMenu.tscn" id="2_w74yj"]
+[ext_resource type="PackedScene" path="res://scenes/ui/WorldGenUI.tscn" id="3_78n8r"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameUI.tscn" id="4_j8k2d"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_0vrtk")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MainMenu" parent="UI" instance=ExtResource("2_w74yj")]
+
+[node name="WorldGenUI" parent="UI" instance=ExtResource("3_78n8r")]
+
+[node name="GameUI" parent="UI" instance=ExtResource("4_j8k2d")]
+
+[node name="GameWorld" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="GameWorld"]
+enabled = true
+
+[node name="WorldContainer" type="Node2D" parent="GameWorld"]
+
+[node name="EntityContainer" type="Node2D" parent="GameWorld"]

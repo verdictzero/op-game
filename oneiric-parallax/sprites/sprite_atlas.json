@@ -1,0 +1,1138 @@
+{
+  "units": {
+    "primitive": [
+      {
+        "name": "basic",
+        "file": "primitive/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "primitive/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "primitive/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "primitive/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "ancient": [
+      {
+        "name": "basic",
+        "file": "ancient/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "ancient/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "ancient/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "ancient/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "medieval": [
+      {
+        "name": "basic",
+        "file": "medieval/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "medieval/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "medieval/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "medieval/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "renaissance": [
+      {
+        "name": "basic",
+        "file": "renaissance/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "renaissance/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "renaissance/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "renaissance/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "industrial": [
+      {
+        "name": "basic",
+        "file": "industrial/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "industrial/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "industrial/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "industrial/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "modern": [
+      {
+        "name": "basic",
+        "file": "modern/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "modern/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "modern/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "modern/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "space": [
+      {
+        "name": "basic",
+        "file": "space/unit_basic.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "worker",
+        "file": "space/unit_worker.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "warrior",
+        "file": "space/unit_warrior.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "leader",
+        "file": "space/unit_leader.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ]
+  },
+  "buildings": {
+    "primitive": [
+      {
+        "name": "tent",
+        "file": "primitive/building_tent.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "hut",
+        "file": "primitive/building_hut.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "shrine",
+        "file": "primitive/building_shrine.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "ancient": [
+      {
+        "name": "villa",
+        "file": "ancient/building_villa.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "temple",
+        "file": "ancient/building_temple.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "forum",
+        "file": "ancient/building_forum.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "medieval": [
+      {
+        "name": "blacksmith",
+        "file": "medieval/building_blacksmith.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "cathedral",
+        "file": "medieval/building_cathedral.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "castle",
+        "file": "medieval/building_castle.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "renaissance": [
+      {
+        "name": "mansion",
+        "file": "renaissance/building_mansion.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "university",
+        "file": "renaissance/building_university.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "workshop",
+        "file": "renaissance/building_workshop.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "industrial": [
+      {
+        "name": "house",
+        "file": "industrial/building_house.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "office",
+        "file": "industrial/building_office.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "factory",
+        "file": "industrial/building_factory.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "modern": [
+      {
+        "name": "hospital",
+        "file": "modern/building_hospital.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "mall",
+        "file": "modern/building_mall.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "apartment",
+        "file": "modern/building_apartment.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ],
+    "space": [
+      {
+        "name": "station",
+        "file": "space/building_station.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "dome",
+        "file": "space/building_dome.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "solar_array",
+        "file": "space/building_solar_array.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "habitat",
+        "file": "space/building_habitat.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "factory",
+        "file": "space/building_factory.png",
+        "size": [
+          64,
+          64
+        ]
+      },
+      {
+        "name": "lab",
+        "file": "space/building_lab.png",
+        "size": [
+          64,
+          64
+        ]
+      }
+    ]
+  },
+  "terrain": [
+    {
+      "name": "swamp",
+      "file": "terrain/swamp.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grass",
+      "file": "terrain/grass.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "snow",
+      "file": "terrain/snow.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "desert",
+      "file": "terrain/desert.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "forest",
+      "file": "terrain/forest.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "mountain",
+      "file": "terrain/mountain.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "volcanic",
+      "file": "terrain/volcanic.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "water",
+      "file": "terrain/water.png",
+      "size": [
+        32,
+        32
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "name": "explosion_frame_1",
+      "file": "effects/explosion_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "sparkle_frame_2",
+      "file": "effects/sparkle_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "sparkle_frame_1",
+      "file": "effects/sparkle_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "sparkle_frame_3",
+      "file": "effects/sparkle_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_0",
+      "file": "effects/smoke_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_3",
+      "file": "effects/smoke_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "explosion_frame_2",
+      "file": "effects/explosion_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "sparkle_frame_0",
+      "file": "effects/sparkle_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "explosion_frame_3",
+      "file": "effects/explosion_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_1",
+      "file": "effects/smoke_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_2",
+      "file": "effects/smoke_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "explosion_frame_0",
+      "file": "effects/explosion_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    }
+  ],
+  "vegetation": [
+    {
+      "name": "flowers_healthy",
+      "file": "vegetation/flowers_healthy.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "vegetables_dead",
+      "file": "vegetation/vegetables_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grass_dry",
+      "file": "vegetation/grass_dry.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "corn_dead",
+      "file": "vegetation/corn_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "flowers_wilted",
+      "file": "vegetation/flowers_wilted.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "corn_sprout",
+      "file": "vegetation/corn_sprout.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bush_autumn",
+      "file": "vegetation/bush_autumn.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "vegetables_mature",
+      "file": "vegetation/vegetables_mature.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wheat_dead",
+      "file": "vegetation/wheat_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_seedling",
+      "file": "vegetation/tree_seedling.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wheat_seed",
+      "file": "vegetation/wheat_seed.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grass_dead",
+      "file": "vegetation/grass_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wheat_mature",
+      "file": "vegetation/wheat_mature.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "vegetables_seed",
+      "file": "vegetation/vegetables_seed.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_sapling",
+      "file": "vegetation/tree_sapling.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bush_healthy",
+      "file": "vegetation/bush_healthy.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wheat_growing",
+      "file": "vegetation/wheat_growing.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "vegetables_sprout",
+      "file": "vegetation/vegetables_sprout.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "corn_mature",
+      "file": "vegetation/corn_mature.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "flowers_dead",
+      "file": "vegetation/flowers_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grass_burnt",
+      "file": "vegetation/grass_burnt.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "corn_growing",
+      "file": "vegetation/corn_growing.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "bush_dead",
+      "file": "vegetation/bush_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "grass_healthy",
+      "file": "vegetation/grass_healthy.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_dead",
+      "file": "vegetation/tree_dead.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_mature",
+      "file": "vegetation/tree_mature.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_old",
+      "file": "vegetation/tree_old.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "corn_seed",
+      "file": "vegetation/corn_seed.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "tree_burnt",
+      "file": "vegetation/tree_burnt.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "wheat_sprout",
+      "file": "vegetation/wheat_sprout.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "vegetables_growing",
+      "file": "vegetation/vegetables_growing.png",
+      "size": [
+        32,
+        32
+      ]
+    }
+  ],
+  "fire": [
+    {
+      "name": "fire_small_frame_1",
+      "file": "fire/fire_small_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_2",
+      "file": "fire/ember_frame_2.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_dying_frame_0",
+      "file": "fire/fire_dying_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_large_frame_2",
+      "file": "fire/fire_large_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_4",
+      "file": "fire/smoke_frame_4.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_medium_frame_3",
+      "file": "fire/fire_medium_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_small_frame_0",
+      "file": "fire/fire_small_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_4",
+      "file": "fire/ember_frame_4.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_large_frame_0",
+      "file": "fire/fire_large_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_0",
+      "file": "fire/ember_frame_0.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_medium_frame_1",
+      "file": "fire/fire_medium_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_0",
+      "file": "fire/smoke_frame_0.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_small_frame_2",
+      "file": "fire/fire_small_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_7",
+      "file": "fire/smoke_frame_7.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_ignition_frame_3",
+      "file": "fire/fire_ignition_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_3",
+      "file": "fire/smoke_frame_3.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_ignition_frame_2",
+      "file": "fire/fire_ignition_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_ignition_frame_1",
+      "file": "fire/fire_ignition_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_1",
+      "file": "fire/smoke_frame_1.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_dying_frame_3",
+      "file": "fire/fire_dying_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_medium_frame_0",
+      "file": "fire/fire_medium_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_3",
+      "file": "fire/ember_frame_3.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_dying_frame_1",
+      "file": "fire/fire_dying_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_1",
+      "file": "fire/ember_frame_1.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_ignition_frame_0",
+      "file": "fire/fire_ignition_frame_0.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_medium_frame_2",
+      "file": "fire/fire_medium_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "ember_frame_5",
+      "file": "fire/ember_frame_5.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_large_frame_3",
+      "file": "fire/fire_large_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_2",
+      "file": "fire/smoke_frame_2.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_dying_frame_2",
+      "file": "fire/fire_dying_frame_2.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_6",
+      "file": "fire/smoke_frame_6.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fire_large_frame_1",
+      "file": "fire/fire_large_frame_1.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "fire_small_frame_3",
+      "file": "fire/fire_small_frame_3.png",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "name": "smoke_frame_5",
+      "file": "fire/smoke_frame_5.png",
+      "size": [
+        32,
+        32
+      ]
+    }
+  ]
+}

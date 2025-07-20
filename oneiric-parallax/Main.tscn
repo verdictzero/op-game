@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3qxkw8qv2yx5"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_0jxkw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0jxkw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="WorldContainer" type="Node2D" parent="."]
+
+[node name="EntityContainer" type="Node2D" parent="."]

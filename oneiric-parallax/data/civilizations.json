@@ -1,0 +1,59 @@
+{
+  "primitive": {
+    "name": "Primitive Tribe",
+    "era": "primitive",
+    "technologies": [
+      "fire",
+      "tools",
+      "language"
+    ],
+    "units": [
+      "gatherer",
+      "hunter",
+      "shaman"
+    ],
+    "buildings": [
+      "hut",
+      "fire_pit",
+      "shrine"
+    ]
+  },
+  "industrial": {
+    "name": "Industrial Nation",
+    "era": "industrial",
+    "technologies": [
+      "steam_power",
+      "electricity",
+      "railways"
+    ],
+    "units": [
+      "worker",
+      "engineer",
+      "soldier"
+    ],
+    "buildings": [
+      "factory",
+      "power_plant",
+      "barracks"
+    ]
+  },
+  "space": {
+    "name": "Space Civilization",
+    "era": "space",
+    "technologies": [
+      "fusion_power",
+      "space_travel",
+      "terraforming"
+    ],
+    "units": [
+      "scientist",
+      "astronaut",
+      "engineer"
+    ],
+    "buildings": [
+      "lab",
+      "spaceport",
+      "habitat"
+    ]
+  }
+}

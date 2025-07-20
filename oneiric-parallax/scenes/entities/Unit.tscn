@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8j5n7w2x4k9m"]
+
+[ext_resource type="Script" path="res://scripts/entities/Unit.gd" id="1_2hjkl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(8, 8)
+
+[node name="Unit" type="CharacterBody2D"]
+script = ExtResource("1_2hjkl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="AI" type="Node" parent="."]
+
+[node name="Needs" type="Node" parent="."]

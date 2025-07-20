@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c9k6m8n5p2q7r"]
+
+[ext_resource type="Script" path="res://scripts/entities/Building.gd" id="1_3klmn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(16, 16)
+
+[node name="Building" type="StaticBody2D"]
+script = ExtResource("1_3klmn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="ProductionArea" type="Area2D" parent="."]
