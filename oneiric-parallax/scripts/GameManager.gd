@@ -27,9 +27,11 @@ var camera_speed = 400.0
 var zoom_speed = 0.1
 
 func _ready():
+	print("GameManager starting...")
 	setup_managers()
 	setup_ui()
 	set_state(GameState.MAIN_MENU)
+	print("GameManager ready, showing main menu")
 
 func setup_managers():
 	world_generator = WorldGenerator.new()
@@ -57,6 +59,7 @@ func setup_ui():
 
 func set_state(new_state: GameState):
 	current_state = new_state
+	print("Setting state to: ", new_state)
 	
 	# Hide all UI first
 	main_menu.visible = false
@@ -67,18 +70,23 @@ func set_state(new_state: GameState):
 	# Show appropriate UI
 	match current_state:
 		GameState.MAIN_MENU:
+			print("Showing main menu")
 			main_menu.visible = true
 		GameState.WORLD_GENERATION:
+			print("Showing world generation UI")
 			world_gen_ui.visible = true
 		GameState.PLAYING:
+			print("Showing game world")
 			game_world.visible = true
 			game_ui.visible = true
 			game_ui.set_fire_system(fire_system)
 
 func _on_new_game_requested():
+	print("New game requested - transitioning to world generation")
 	set_state(GameState.WORLD_GENERATION)
 
 func _on_quit_requested():
+	print("Quit requested")
 	get_tree().quit()
 
 func _on_generate_world_requested(params: Dictionary):

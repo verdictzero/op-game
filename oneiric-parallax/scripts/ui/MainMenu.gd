@@ -21,7 +21,13 @@ func setup_ui():
 	tween.tween_property(title_label, "modulate:a", 1.0, 1.0)
 
 func _on_new_game_pressed():
+	print("New game button pressed")
 	new_game_requested.emit()
 
 func _on_quit_pressed():
+	print("Quit button pressed")
 	quit_requested.emit()
+
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
