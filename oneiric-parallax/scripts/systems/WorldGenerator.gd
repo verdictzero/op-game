@@ -71,6 +71,9 @@ func set_generation_params(params: Dictionary):
 	humidity_noise.frequency = humidity_scale
 	resource_noise.frequency = 0.2
 
+func generate_world(container: Node2D):
+	generate_world_async(container)
+
 func generate_world_async(container: Node2D):
 	print("Starting world generation...")
 	generation_progress.emit(0.0, "Initializing world data...")
