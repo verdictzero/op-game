@@ -41,7 +41,7 @@ func on_world_generation_complete():
 
 func update_world_stats(stats: Dictionary):
 	var stats_text = "WORLD INFO:\n"
-	stats_text += "Size: %dx%d tiles\n" % [stats.get("world_width", 128), stats.get("world_height", 128)]
+	stats_text += "Size: %dx%d tiles\n" % [64, 64]  # Updated to match new world size
 	stats_text += "Total tiles: %d\n" % stats.get("total_tiles", 0)
 	stats_text += "\nTERRAIN:\n"
 	

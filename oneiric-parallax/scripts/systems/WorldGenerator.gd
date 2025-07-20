@@ -5,7 +5,7 @@ signal generation_progress(progress: float, message: String)
 signal generation_complete()
 
 var terrain_tiles: Array[TerrainTile]
-var world_size: Vector2i = Vector2i(128, 128)
+var world_size: Vector2i = Vector2i(64, 64)  # Smaller world for faster generation
 var tile_size: int = 32
 
 # World generation parameters
@@ -346,7 +346,10 @@ func generate_vegetation():
 			
 			world_data[x][y]["vegetation"] = vegetation
 		
-		if x % 10 == 0:
+		# More frequent yielding and progress updates
+		if x % 5 == 0:
+			var progress = 0.8 + (float(x) / world_size.x) * 0.1
+			generation_progress.emit(progress, "Growing vegetation... (%d/%d)" % [x + 1, world_size.x])
 			await get_tree().process_frame
 
 func create_world_tiles(container: Node2D):
@@ -357,7 +360,10 @@ func create_world_tiles(container: Node2D):
 			var tile_data = world_data[x][y]
 			create_terrain_tile_advanced(x, y, tile_data, container)
 		
-		if x % 10 == 0:
+		# More frequent yielding for large worlds
+		if x % 5 == 0:
+			var progress = 0.9 + (float(x) / world_size.x) * 0.1
+			generation_progress.emit(progress, "Creating world tiles... (%d/%d)" % [x + 1, world_size.x])
 			await get_tree().process_frame
 
 func create_terrain_tile_advanced(x: int, y: int, tile_data: Dictionary, container: Node2D):

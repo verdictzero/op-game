@@ -16,8 +16,8 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 10.0
-offset_top = -150.0
-offset_right = 300.0
+offset_top = -200.0
+offset_right = 320.0
 offset_bottom = -10.0
 
 [node name="VBox" type="VBoxContainer" parent="GodPowersPanel"]
@@ -57,10 +57,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -300.0
+offset_left = -320.0
 offset_top = 10.0
 offset_right = -10.0
-offset_bottom = 150.0
+offset_bottom = 400.0
 
 [node name="VBox" type="VBoxContainer" parent="WorldInfoPanel"]
 layout_mode = 1
